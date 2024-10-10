@@ -1,3 +1,4 @@
 ## Apuntamentos
 >compilar = javac "archivo.java"
-ejecutar = java "archivo"
+
+>ejecutar = java "archivo"
