@@ -5,3 +5,7 @@ Crear archivos
 Facer commit
     
     git commit -m "mensaxe"
+
+crear carpetas
+
+    mkdir "Nombre carpeta"
