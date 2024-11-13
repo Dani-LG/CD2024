@@ -13,3 +13,7 @@ crear carpetas
 modificar archivos
 
     nano "nome archivo"
+
+Mostrar historial commits
+
+    git log
