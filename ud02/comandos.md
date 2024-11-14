@@ -38,3 +38,15 @@ Ignorar archivos
     (Añadir archivo que queres ignorar)
     _* (ignora todos os archivos que comecen por "_")
     !"archivo"(Fai unha excepcion co archivo indicado despois da "!")
+
+crear rama
+
+    git branch "nome de rama"
+
+mostrar ramas
+
+    git branch
+
+Cambiar rama
+
+    git checkout "nome de rama"
