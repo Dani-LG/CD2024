@@ -50,3 +50,11 @@ mostrar ramas
 Cambiar rama
 
     git checkout "nome de rama"
+
+fusionar ramas
+
+    git merge "nome rama"
+
+eliminar rama
+
+    git branch -d "rama"
