@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TestProfesor",
+            "request": "launch",
+            "mainClass": "ud03.TestProfesor",
+            "projectName": "CD2024_6cf3d873"
+        },
+        {
+            "type": "java",
             "name": "Test",
             "request": "launch",
             "mainClass": "ud03.Test",
