@@ -1,7 +1,24 @@
 package daniellg.com;
 
 public class Fecha {
-
+    private static int num31 = 31;
+    private static int num12 = 12;
+    private static int num30 = 30;
+    private static int num400 = 400;
+    private static int num4 = 4;
+    private static int num100 = 100;
+    private static int num29 = 29;
+    private static int num28 = 28;
+    private static final int NUM3 = 3;
+    private static final int NUM4 = 4;
+    private static final int NUM5 = 5;
+    private static final int NUM6 = 6;
+    private static final int NUM7 = 7;
+    private static final int NUM8 = 8;
+    private static final int NUM9 = 9;
+    private static final int NUM10 = 10;
+    private static final int NUM11 = 11;
+    private static final int NUM12 = 12;
     private int dia;
 
     private int mes;
@@ -15,16 +32,15 @@ public class Fecha {
         this.mes = mes;
 
         this.anio = anio;
-
     }
 
     public boolean valida() {
 
-        if (dia < 1 || dia > 31) {
+        if (dia < 1 || dia > num31) {
 
             return false;
         }
-        if (mes < 1 || mes > 12) {
+        if (mes < 1 || mes > num12) {
 
             return false;
         }
@@ -36,39 +52,37 @@ public class Fecha {
 
             case 1:
 
-            case 3:
+            case NUM3:
 
-            case 5:
+            case NUM5:
 
-            case 7:
+            case NUM7:
 
-            case 8:
+            case NUM8:
 
-            case 10:
+            case NUM10:
 
-            case 12:
-                diasMes = 31;
+            case NUM12:
+                diasMes = num31;
                 break;
 
-            case 4:
+            case NUM4:
 
-            case 6:
+            case NUM6:
 
-            case 9:
+            case NUM9:
 
-            case 11:
-                diasMes = 30;
+            case NUM11:
+                diasMes = num30;
                 break;
 
             case 2: // verificación de año bisiesto
 
-                if (anio % 400 == 0 || anio % 4 == 0 && anio % 100 != 0) {
+                if (anio % num400 == 0 || anio % num4 == 0 && anio % num100 != 0) {
 
-                    diasMes = 29;
-                }
-
-                else {
-                    diasMes = 28;
+                    diasMes = num29;
+                } else {
+                    diasMes = num28;
                 }
 
                 break;
@@ -76,14 +90,7 @@ public class Fecha {
 
         }
 
-        if (dia > diasMes) {
-
-            return false;
-        }
-
-        else {
-            return true;
-        }
+        return !(dia > diasMes);
     }
 
 }

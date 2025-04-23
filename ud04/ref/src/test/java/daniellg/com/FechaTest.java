@@ -3,6 +3,8 @@ package daniellg.com;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import org.junit.jupiter.api.Test;
+
 public class FechaTest {
     private Fecha fechaCorrecta = new Fecha(20, 6, 2008);
 
@@ -28,6 +30,7 @@ public class FechaTest {
 
     private Fecha diaMalFebreroBisiesto2 = new Fecha(29, 2, 1900);
 
+    @Test
     public void testValida() {
 
         assertTrue(fechaCorrecta.valida());
@@ -53,7 +56,5 @@ public class FechaTest {
         assertFalse(diaMalFebreroBisiesto1.valida());
 
         assertFalse(diaMalFebreroBisiesto2.valida());
-    
-    
     }
 }
